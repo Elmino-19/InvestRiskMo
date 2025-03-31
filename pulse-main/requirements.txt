@@ -1,0 +1,5 @@
+altair==5.5.0
+numpy==2.2.3
+streamlit==1.42.2
+streamlit-extras==0.5.5
+yfinance==0.2.54

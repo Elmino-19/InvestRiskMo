@@ -1,0 +1,242 @@
+
+
+/* ===== استایل‌های پایه ===== */
+* {
+    direction: rtl;
+    text-align: right;
+    font-family: 'Vazir', sans-serif;
+}
+
+body, p, div, span {
+    color: var(--text-dark);
+    font-family: 'Vazir', sans-serif;
+    direction: rtl;
+    text-align: right;
+}
+
+/* ===== استایل‌های تایپوگرافی ===== */
+h1 { 
+    font-size: 28px !important;
+    color: rgb(247, 82, 32) !important; 
+    align-items: center;
+    font-weight: bold !important;
+    margin-bottom: 20px !important;
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.2) !important;
+    text-align: right;
+}
+
+h2 { 
+    font-size: 22px !important;
+    color: rgb(17, 182, 2) !important;
+    align-items: center;
+    font-weight: 600 !important;
+    margin-bottom: 15px !important;
+    text-align: right;
+}
+
+p1 {
+    color: white;
+    text-align: right;
+}
+
+/* ===== استایل‌های کانتینر ===== */
+.streamlit-container, 
+.stApp {
+    padding: 0;
+    margin: 0;
+    direction: rtl;
+}
+
+[data-testid="stAppViewContainer"] {
+    padding: 10px;
+    margin: 0;
+    direction: rtl;
+}
+[data-testid="stSidebarCollapsedControl"] {
+    display: none;
+}
+
+/* ===== استایل‌های سایدبار ===== */
+section[data-testid='stSidebar'] {
+    background-color: #15254d;
+    height: 100%;
+    position: relative;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    overflow-x: hidden;
+    padding-top: 10px;
+    white-space: nowrap;
+    direction: rtl;
+    text-align: right;
+    width: 8vh;
+}
+
+/* ===== مخفی کردن هدر ===== */
+header[data-testid="stHeader"] {
+    display: none;
+}
+
+/* ===== استایل‌های فرم و ورودی ===== */
+[data-testid="stTextInput"] input,
+[data-testid="stDateInput"] input,
+[data-baseweb="select"] {
+    background: #0f1116;
+    color: #ffffff;
+    border: 2px solid #1d2cf3;
+    border-radius: 0px;
+    outline: none;
+    text-align: right;
+    direction: rtl;
+}
+
+/* ===== استایل‌های دکمه ===== */
+button[kind="primary"] {
+    background-color: #1d2cf3;
+    color: #ffffff;
+    border: 2px solid #ffffff;
+    border-radius: 0px;
+    outline: none;
+    box-sizing: border-box;
+    width: 100% !important;
+    text-align: center;
+}
+
+button[kind="primary"]:hover {
+    background-color: #1d2cf3;
+    color: #ffffff;
+    border-color: #ffffff;
+    box-shadow: 0 0 30px #1d2cf3;
+}
+
+/* ===== استایل‌های نمایش امتیاز ===== */
+.risk-score-container {
+    padding: 20px;
+    border-radius: 10px;
+    background-color: #f0f2f6;
+    text-align: center;
+    direction: rtl;
+}
+
+.risk-score-title {
+    font-size: 18px;
+    text-align: center;
+}
+
+.risk-score-value {
+    color: #1f77b4;
+    font-size: 22px;
+    text-align: center;
+}
+
+/* ===== استایل‌های متفرقه ===== */
+.hr-opacity {
+    opacity: 0.8;
+}
+
+.vertical-line {
+    border-left: 0.5px solid grey;
+    height: 700px;
+    margin: 0 40px;
+    opacity: 0.2;
+}
+
+/* ===== استایل‌های ریسپانسیو ===== */
+@media (max-width: 599px) {
+    section[data-testid='stSidebar'] {
+        width: 60px !important;
+    }
+    
+    h1 { 
+        font-size: 24px !important;
+    }
+    
+    p1 { 
+        font-size: 18px; 
+    }
+    
+    [data-testid="stDateInput"] input,
+    [data-baseweb="select"],
+    button[kind="primary"] {
+        height: 40px;
+        font-size: 10px;
+        padding: 7px;
+    }
+}
+
+@media (min-width: 600px) and (max-width: 769px) {
+    section[data-testid='stSidebar'] {
+        width: 95px !important;
+    }
+    
+    h1 { 
+        font-size: 26px !important;
+    }
+    
+    p1 { 
+        font-size: 20px; 
+    }
+    
+    [data-testid="stDateInput"] input,
+    [data-baseweb="select"],
+    button[kind="primary"] {
+        height: 50px;
+        font-size: 12px;
+        padding: 9px;
+    }
+}
+
+@media (min-width: 770px) {
+    section[data-testid='stSidebar'] {
+        width: 400px !important;
+    }
+    
+    [data-testid="stDateInput"] input,
+    [data-baseweb="select"] {
+        height: 80px;
+        font-size: 16px;
+        padding: 14px;
+    }
+    
+    button[kind="primary"] {
+        height: 80px;
+        font-size: 24px;
+        padding: 14px;
+        margin: 25px 0;
+    }
+    
+    p1 { 
+        font-size: 16px; 
+    }
+}
+
+/* ===== استایل‌های Streamlit اختصاصی ===== */
+[data-testid="stMarkdown"] {
+    text-align: right !important;
+    direction: rtl !important;
+}
+
+[data-testid="stForm"] {
+    text-align: right !important;
+    direction: rtl !important;
+}
+
+[data-testid="stRadio"] {
+    text-align: right !important;
+    direction: rtl !important;
+}
+
+.stRadio > label {
+    text-align: right !important;
+    direction: rtl !important;
+}
+
+.stSelectbox {
+    text-align: right !important;
+    direction: rtl !important;
+}
+
+.stTextInput {
+    text-align: right !important;
+    direction: rtl !important;
+}
